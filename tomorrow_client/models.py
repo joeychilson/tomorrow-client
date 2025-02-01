@@ -35,9 +35,7 @@ class HourlyValues(BaseModel):
     humidity: float = Field(default=0)
     ice_accumulation: float = Field(default=0, alias="iceAccumulation")
     ice_accumulation_lwe: float = Field(default=0, alias="iceAccumulationLwe")
-    precipitation_probability: float = Field(
-        default=0, alias="precipitationProbability"
-    )
+    precipitation_probability: float = Field(default=0, alias="precipitationProbability")
     pressure_surface_level: float = Field(default=0, alias="pressureSurfaceLevel")
     rain_accumulation: float = Field(default=0, alias="rainAccumulation")
     rain_accumulation_lwe: float = Field(default=0, alias="rainAccumulationLwe")
@@ -76,15 +74,9 @@ class DailyValues(BaseModel):
     evapotranspiration_max: float = Field(default=0, alias="evapotranspirationMax")
     evapotranspiration_min: float = Field(default=0, alias="evapotranspirationMin")
     evapotranspiration_sum: float = Field(default=0, alias="evapotranspirationSum")
-    freezing_rain_intensity_avg: float = Field(
-        default=0, alias="freezingRainIntensityAvg"
-    )
-    freezing_rain_intensity_max: float = Field(
-        default=0, alias="freezingRainIntensityMax"
-    )
-    freezing_rain_intensity_min: float = Field(
-        default=0, alias="freezingRainIntensityMin"
-    )
+    freezing_rain_intensity_avg: float = Field(default=0, alias="freezingRainIntensityAvg")
+    freezing_rain_intensity_max: float = Field(default=0, alias="freezingRainIntensityMax")
+    freezing_rain_intensity_min: float = Field(default=0, alias="freezingRainIntensityMin")
     humidity_avg: float = Field(default=0, alias="humidityAvg")
     humidity_max: float = Field(default=0, alias="humidityMax")
     humidity_min: float = Field(default=0, alias="humidityMin")
@@ -96,25 +88,13 @@ class DailyValues(BaseModel):
     ice_accumulation_min: float = Field(default=0, alias="iceAccumulationMin")
     ice_accumulation_sum: float = Field(default=0, alias="iceAccumulationSum")
     moonrise_time: datetime = Field(alias="moonriseTime")
-    moonset_time: datetime = Field(alias="moonsetTime")
-    precipitation_probability_avg: float = Field(
-        default=0, alias="precipitationProbabilityAvg"
-    )
-    precipitation_probability_max: float = Field(
-        default=0, alias="precipitationProbabilityMax"
-    )
-    precipitation_probability_min: float = Field(
-        default=0, alias="precipitationProbabilityMin"
-    )
-    pressure_surface_level_avg: float = Field(
-        default=0, alias="pressureSurfaceLevelAvg"
-    )
-    pressure_surface_level_max: float = Field(
-        default=0, alias="pressureSurfaceLevelMax"
-    )
-    pressure_surface_level_min: float = Field(
-        default=0, alias="pressureSurfaceLevelMin"
-    )
+    moonset_time: Optional[datetime] = Field(None, alias="moonsetTime")
+    precipitation_probability_avg: float = Field(default=0, alias="precipitationProbabilityAvg")
+    precipitation_probability_max: float = Field(default=0, alias="precipitationProbabilityMax")
+    precipitation_probability_min: float = Field(default=0, alias="precipitationProbabilityMin")
+    pressure_surface_level_avg: float = Field(default=0, alias="pressureSurfaceLevelAvg")
+    pressure_surface_level_max: float = Field(default=0, alias="pressureSurfaceLevelMax")
+    pressure_surface_level_min: float = Field(default=0, alias="pressureSurfaceLevelMin")
     rain_accumulation_avg: float = Field(default=0, alias="rainAccumulationAvg")
     rain_accumulation_lwe_avg: float = Field(default=0, alias="rainAccumulationLweAvg")
     rain_accumulation_lwe_max: float = Field(default=0, alias="rainAccumulationLweMax")
@@ -126,15 +106,9 @@ class DailyValues(BaseModel):
     rain_intensity_max: float = Field(default=0, alias="rainIntensityMax")
     rain_intensity_min: float = Field(default=0, alias="rainIntensityMin")
     sleet_accumulation_avg: float = Field(default=0, alias="sleetAccumulationAvg")
-    sleet_accumulation_lwe_avg: float = Field(
-        default=0, alias="sleetAccumulationLweAvg"
-    )
-    sleet_accumulation_lwe_max: float = Field(
-        default=0, alias="sleetAccumulationLweMax"
-    )
-    sleet_accumulation_lwe_min: float = Field(
-        default=0, alias="sleetAccumulationLweMin"
-    )
+    sleet_accumulation_lwe_avg: float = Field(default=0, alias="sleetAccumulationLweAvg")
+    sleet_accumulation_lwe_max: float = Field(default=0, alias="sleetAccumulationLweMax")
+    sleet_accumulation_lwe_min: float = Field(default=0, alias="sleetAccumulationLweMin")
     sleet_accumulation_max: float = Field(default=0, alias="sleetAccumulationMax")
     sleet_accumulation_min: float = Field(default=0, alias="sleetAccumulationMin")
     sleet_intensity_avg: float = Field(default=0, alias="sleetIntensityAvg")
@@ -185,9 +159,7 @@ class MinutelyValues(BaseModel):
     dew_point: float = Field(default=0, alias="dewPoint")
     freezing_rain_intensity: float = Field(default=0, alias="freezingRainIntensity")
     humidity: float = Field(default=0)
-    precipitation_probability: float = Field(
-        default=0, alias="precipitationProbability"
-    )
+    precipitation_probability: float = Field(default=0, alias="precipitationProbability")
     pressure_surface_level: float = Field(default=0, alias="pressureSurfaceLevel")
     rain_intensity: float = Field(default=0, alias="rainIntensity")
     sleet_intensity: float = Field(default=0, alias="sleetIntensity")
